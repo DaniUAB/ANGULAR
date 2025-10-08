@@ -1,14 +1,11 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common'; // Módulos básicos de Angular
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
-  standalone: true, // <-- ¡Crucial! Define que es un componente moderno/independiente
-  imports: [
-    CommonModule // Necesario para usar directivas como *ngIf, *ngFor, etc.
-],
-  templateUrl: './home.html', // Usando tu nombre de archivo
-  styleUrl: './home.scss'
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './home.html',
+  styleUrls: ['./home.scss'] // ✅ en plural
 })
-export class HomeComponent { // <-- Usando la convención de Angular
-}
+export class HomeComponent {}

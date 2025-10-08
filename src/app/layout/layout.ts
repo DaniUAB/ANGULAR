@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router'; // <-- ¡IMPORTANTE! Asegúrate de que esta línea esté aquí
+import { RouterLink, RouterOutlet } from '@angular/router'; // 👈 muy importante
 
 @Component({
   selector: 'app-layout',
   standalone: true,
-  imports: [CommonModule, RouterOutlet], // <-- ¡DEBE ESTAR EL ROUTEROUTLET AQUÍ!
+  imports: [CommonModule, RouterLink, RouterOutlet], // 👈 asegúrate de incluirlo
   templateUrl: './layout.html',
   styleUrl: './layout.scss'
 })
-export class LayoutComponent {
-}
+export class LayoutComponent {}
